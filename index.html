@@ -3,16 +3,64 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Painting</title>
+  <title>Survey Form</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-  <div class="frame">
-    <div class="canvas">
-      <div class="one"></div>
-      <div class="two"></div>
-      <div class="three"></div>
-    </div>
-  </div>
+  <div class="container">
+    <h1>Glints Customers Survey Form</h1>
+    <p><em>berikan pendapatmu dengan jawaban yang sejujurnya</em></p>
+    <form action="#" method="post">
+      <label for="name-label">Nama: <input type="text" id="name-label" name="name-label" placeholder="Masukan namamu" required></label>
+      <label for="email-label">Email: <input type="email" id="email-label" name="email-label" placeholder="Masukan emailmu" required></label>
+    <label for="number-label">Umur (opsional): <input type="number" id="number" name="number" min="10" max="63" placeholder="Masukan Umurmu (opsional)" required></label>
+    <label for="dropdown">Apa preferensi Pekerjaan Yang Kamu Inginkan:
+      <select name="dropdown" id="dropdown">
+        <option value="Pilih-satu-tipe-pekerjaan">(pilih satu tipe pekerjaan)</option>
+        <option value="kerja-kantoran">Kerja Kantoran</option>
+        <option value="kerja-lapangan">Kerja Lapangan</option>
+        <option value="Kerja-dari-rumah">Kerja Dari Rumah (WFH)</option>
+        <option value="Kerja-partime">Freelance</option>
+        <option value="yang-lain">Yang Lain</option>
+      </select>
+    </label>
+    <label >Apa Kamu Merekomendasikan Glints:
+      <label for="iya" class="upside"><input type="radio" id="iya" name="suggest">Iya</label>
+      <label for="tidak" class="recomend"><input type="radio" id="tidak" name="suggest">Tidak</label>
+      <label for="okelah" class="recomend"><input type="radio" id="okelah" name="suggest">Masih Ragu</label>
+    </label>
+    <label for="fitur">Apa Fitur Yang Kamu Suka Dari Glints:
+      <select name="fitur" id="fitur">
+        <option value="pilih-opsi">Pilih Sebuah Opsi</option>
+        <option value="chat-hrd">Dapat Chat Langsung Dengan HRD</option>
+        <option value="banyak-kerja">Banyak Referensi Bidang Kerja</option>
+        <option value="aman">Sangat Aman Dari Penipuan</option>
+        <option value="banyak-tips">Banyak Tips Untuk Membantu Mendapat Kerja</option>
+        <option value="yang-lain">Yang Lain</option>
+      </select>
+    </label>
+    <label class="check">Apa Pekerjaan Yang Kamu Inginkan (pilih lebih dari satu):
+      <label for="teknisi"><input type="checkbox" id="teknisi" name="teknisi" value="teknisi"> Teknisi</label>
+      <label for="Mekanik"><input type="checkbox" id="Mekanik" name="Mekanik" value="Mekanik"> Mekanik</label>
+      <label for="Management"><input type="checkbox" id="Management" name="Management" value="Management"> Management</label>
+      <label for="Accountant"><input type="checkbox" id="Accountant" name="Accountant" value="Accountant"> Accountant</label>
+      <label for="Finance"><input type="checkbox" id="Finance" name="Finance" value="Finance Finance" />Finance</label>
+      <label for="Humas"><input type="checkbox" id="Humas" name="Humas" value="Humas"> Humas</label>
+      <label for="Logistik"><input type="checkbox" id="Logistik" name="Logistik" value="Logistik"> Logistik</label>
+      <label for="Content Kreator"><input type="checkbox" id="Content Kreator" name="Content Kreator" value="kontent"> Content Kreator</label>
+      <label for="Marketing"><input type="checkbox" id="Marketing" name="Marketing" value="Marketing"> Marketing</label>
+      <label for="Arsitek"><input type="checkbox" id="Arsitek" name="Arsitek" value="Arsitek"> Arsitek</label>
+      <label for="Saintis"><input type="checkbox" id="Saintis" name="Saintis" value="Saintis"> Saintis</label>
+      <label for="Transportasi"><input type="checkbox" id="Transportasi" name="Transportasi" value="Transportasi"> Transportasi</label>
+    </label>
+    <label for="comment">Apakah Kamu Memiliki Pendapat Atau Saran ?:
+      <textarea name="comment" id="comment" cols="30px" rows="6px" placeholder="Masukan pendapatmu di sini..."></textarea>
+    </label>
+    <input type="submit" value="Submit">
+  </form>
+</div>
 </body>
 </html>
